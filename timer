@@ -94,7 +94,7 @@ elif [ "$BLOCK_BUTTON" == 3 ]; then
 fi
 
 if [ ! -f $zfile ]; then
-	echo timer
+	echo 
 	exit
 fi
 
@@ -105,7 +105,7 @@ if [ $min -gt $now ]; then
 	print_elapsed $(( $min - $now))
 else
 	if [ $min -eq 0 ]; then
-		echo timer
+		echo 
 	else 
 		reset
 		done_window
